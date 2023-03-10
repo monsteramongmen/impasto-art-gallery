@@ -1,0 +1,53 @@
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  image: node:16
+  script:
+    - echo "Start building App"
+    - npm install --legacy-peer-deps
+    - npm run build
+    - echo "Build successfully!"
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - build
+  except:
+    - develop
+    - test
+    - stage
+
+build develop:
+  stage: build
+  image: node:16
+  script:
+    - echo "Start building App"
+    - npm install --legacy-peer-deps
+    - npm run build
+    - echo "Build successfully!"
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - build
+  only:
+    - develop
+
+deploy_development:
+  stage: deploy
+  image: kroniak/ssh-client
+  script:
+    - rm -f .ssh/known_hosts
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - echo "$SERVER_KEY" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh $DEV_ENV_URL 'cd /var/www/html && rm -f -R builds.einstonlabs.com && mkdir builds.einstonlabs.com'
+    - scp -r build/* $DEV_ENV_URL:/var/www/html/builds.einstonlabs.com
+  dependencies: 
+    - build develop
+  only:
+    - develop

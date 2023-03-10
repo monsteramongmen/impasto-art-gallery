@@ -1,0 +1,42 @@
+.card{
+    display: block;
+transition: all 0.5s ease;
+position: relative;
+top: 0;
+left: 0;
+}
+
+.insidecardbox{
+    display: none;
+    transition: all 0.5s ease;
+    border-radius: 6px;
+}
+.insidecard{
+    transition: all 0.5s ease;
+    filter: blur(2px) brightness(60%);
+    /* box-shadow: 0 0 16px cyan; */
+    
+}
+.cardname{
+    display: none;
+}
+.card:hover  .insidecardbox{
+    display: block;
+}
+.card:hover  .cardname{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 500;
+    border:1px solid white;
+    text-align: center;
+    width:250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   word-break: break-word;
+   padding: 5px;
+}
