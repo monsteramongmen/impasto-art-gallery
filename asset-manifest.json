@@ -1,32 +1,33 @@
 {
   "files": {
     "main.css": "/impasto-art-gallery/static/css/main.63a64782.css",
-    "main.js": "/impasto-art-gallery/static/js/main.7ee19eaf.js",
-    "static/css/930.8316d9de.chunk.css": "/impasto-art-gallery/static/css/930.8316d9de.chunk.css",
-    "static/js/930.49549a40.chunk.js": "/impasto-art-gallery/static/js/930.49549a40.chunk.js",
+    "main.js": "/impasto-art-gallery/static/js/main.c818e97c.js",
+    "static/css/930.fc1b9b00.chunk.css": "/impasto-art-gallery/static/css/930.fc1b9b00.chunk.css",
+    "static/js/930.ef1d9586.chunk.js": "/impasto-art-gallery/static/js/930.ef1d9586.chunk.js",
     "static/js/246.61be7862.chunk.js": "/impasto-art-gallery/static/js/246.61be7862.chunk.js",
     "static/js/462.891e4604.chunk.js": "/impasto-art-gallery/static/js/462.891e4604.chunk.js",
-    "static/css/374.c4b68a07.chunk.css": "/impasto-art-gallery/static/css/374.c4b68a07.chunk.css",
-    "static/js/374.49fd4586.chunk.js": "/impasto-art-gallery/static/js/374.49fd4586.chunk.js",
-    "static/css/785.ae40dd42.chunk.css": "/impasto-art-gallery/static/css/785.ae40dd42.chunk.css",
-    "static/js/785.57778b16.chunk.js": "/impasto-art-gallery/static/js/785.57778b16.chunk.js",
+    "static/css/374.6fbc17da.chunk.css": "/impasto-art-gallery/static/css/374.6fbc17da.chunk.css",
+    "static/js/374.a88b658f.chunk.js": "/impasto-art-gallery/static/js/374.a88b658f.chunk.js",
+    "static/css/785.ce4db7e6.chunk.css": "/impasto-art-gallery/static/css/785.ce4db7e6.chunk.css",
+    "static/js/785.19d09cc2.chunk.js": "/impasto-art-gallery/static/js/785.19d09cc2.chunk.js",
     "static/js/787.84beeeeb.chunk.js": "/impasto-art-gallery/static/js/787.84beeeeb.chunk.js",
     "static/media/banner4.jpg": "/impasto-art-gallery/static/media/banner4.b8a95512bd267d395ddd.jpg",
+    "static/media/ImpastoLogo.svg": "/impasto-art-gallery/static/media/ImpastoLogo.cbd20a2d65e68b1f3a4c244896d26789.svg",
     "index.html": "/impasto-art-gallery/index.html",
     "main.63a64782.css.map": "/impasto-art-gallery/static/css/main.63a64782.css.map",
-    "main.7ee19eaf.js.map": "/impasto-art-gallery/static/js/main.7ee19eaf.js.map",
-    "930.8316d9de.chunk.css.map": "/impasto-art-gallery/static/css/930.8316d9de.chunk.css.map",
-    "930.49549a40.chunk.js.map": "/impasto-art-gallery/static/js/930.49549a40.chunk.js.map",
+    "main.c818e97c.js.map": "/impasto-art-gallery/static/js/main.c818e97c.js.map",
+    "930.fc1b9b00.chunk.css.map": "/impasto-art-gallery/static/css/930.fc1b9b00.chunk.css.map",
+    "930.ef1d9586.chunk.js.map": "/impasto-art-gallery/static/js/930.ef1d9586.chunk.js.map",
     "246.61be7862.chunk.js.map": "/impasto-art-gallery/static/js/246.61be7862.chunk.js.map",
     "462.891e4604.chunk.js.map": "/impasto-art-gallery/static/js/462.891e4604.chunk.js.map",
-    "374.c4b68a07.chunk.css.map": "/impasto-art-gallery/static/css/374.c4b68a07.chunk.css.map",
-    "374.49fd4586.chunk.js.map": "/impasto-art-gallery/static/js/374.49fd4586.chunk.js.map",
-    "785.ae40dd42.chunk.css.map": "/impasto-art-gallery/static/css/785.ae40dd42.chunk.css.map",
-    "785.57778b16.chunk.js.map": "/impasto-art-gallery/static/js/785.57778b16.chunk.js.map",
+    "374.6fbc17da.chunk.css.map": "/impasto-art-gallery/static/css/374.6fbc17da.chunk.css.map",
+    "374.a88b658f.chunk.js.map": "/impasto-art-gallery/static/js/374.a88b658f.chunk.js.map",
+    "785.ce4db7e6.chunk.css.map": "/impasto-art-gallery/static/css/785.ce4db7e6.chunk.css.map",
+    "785.19d09cc2.chunk.js.map": "/impasto-art-gallery/static/js/785.19d09cc2.chunk.js.map",
     "787.84beeeeb.chunk.js.map": "/impasto-art-gallery/static/js/787.84beeeeb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63a64782.css",
-    "static/js/main.7ee19eaf.js"
+    "static/js/main.c818e97c.js"
   ]
 }
