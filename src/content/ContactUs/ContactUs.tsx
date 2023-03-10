@@ -3,7 +3,7 @@ import React from 'react'
 
 const ContactUs = () => {
   return (
-    <Box id="contactus" sx={{ width: "90%", height: "auto", margin: "5rem auto 0 auto", display: "flex", alignItems: "flex-start", justifyContent: "center", rowGap: "35px", columnGap: "30px", flexWrap: "wrap", flexDirection: "column" }}>
+    <Box sx={{ width: "90%", height: "auto", margin: "5rem auto 0 auto", display: "flex", alignItems: "flex-start", justifyContent: "center", rowGap: "35px", columnGap: "30px", flexWrap: "wrap", flexDirection: "column" }}>
       <Typography sx={{ fontSize: "28px", fontWeight: "600" }}>Contact Us  <Box sx={{ height: "3px", width: "100px", background: "#1976d2", borderRadius: "6px" }}></Box></Typography>
 
       <Typography align='left' sx={{ fontSize: "20px", width: "100%" }}>Do you have any questions on products, orders, policies, processes, our website etc. or need any other help?

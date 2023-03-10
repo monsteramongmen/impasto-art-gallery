@@ -38,7 +38,7 @@ const TopBar = () => {
   return (
     <>
       {" "}
-      <AppBar id="homeAppbar" position="static" color="primary" sx={{ position: "sticky", top: 0, zIndex: 600 }}>
+      <AppBar position="static" color="primary" sx={{ position: "sticky", top: 0, zIndex: 600 }}>
         <Toolbar
           sx={{
             display: "flex",
@@ -47,19 +47,23 @@ const TopBar = () => {
           }}
         >
           <Hidden only={["xs", "sm"]}>
-            <Box sx={{ width: "10%", height: "10%" }} onClick={() => { navigate("/"); }}>
-              <img src={logo} alt="impasto-logo" width="100%" height="100%" />
+            <Box sx={{ width: "10%", height: "10%", }} onClick={() => { navigate("/"); }}>
+              <a href="#homeAppbar" style={{ textDecoration: "none", color: "white", height: "auto", width: "auto", }}>
+                <img src={logo} alt="impasto-logo" width="100%" height="100%" />
+              </a>
             </Box>
             <Stack direction="row" spacing={2}>
-              <IconButton
-                size="large"
-                edge="start"
-                color="inherit"
-                aria-label="logo"
-                onClick={() => navigate("/")}
-              >
-                <HomeIcon />
-              </IconButton>
+              <a href="#homeAppbar" style={{ textDecoration: "none", color: "white" }}>
+                <IconButton
+                  size="large"
+                  edge="start"
+                  color="inherit"
+                  aria-label="logo"
+                  onClick={() => navigate("/")}
+                >
+                  <HomeIcon />
+                </IconButton>
+              </a>
               <Button onClick={() => navigate('/')} color="inherit">
                 <a href="#aboutus" style={{ textDecoration: "none", color: "white" }}>
                   About Us
@@ -154,8 +158,11 @@ const TopBar = () => {
                 width: "100%",
                 alignItems: "center",
               }}
-            ><Box sx={{ width: "30%", height: "30%" }} onClick={() => { navigate("/"); }}>
-                <img src={logo} alt="impasto-logo" width="100%" height="100%" />
+            >
+              <Box sx={{ width: "30%", height: "30%" }} onClick={() => { navigate("/"); }}>
+                <a href="#homeAppbar" style={{ textDecoration: "none", color: "white", height: "auto", width: "auto" }}>
+                  <img src={logo} alt="impasto-logo" width="100%" height="100%" />
+                </a>
               </Box>
               {!mobileMenu ? (
                 <IconButton
@@ -186,7 +193,7 @@ const TopBar = () => {
                       navigate('/')
                       setMobileMenu(false)
                     }} color="inherit" sx={{ color: "black" }}>
-                      <a href="#aboutus" style={{ color: "black", textDecoration: "none", }}>
+                      <a href="#homeAppbar" style={{ color: "black", textDecoration: "none", }}>
                         Home
                       </a>
                     </Button>

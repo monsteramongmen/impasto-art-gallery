@@ -10,9 +10,12 @@ const Hero = () => {
     return (
         <>
             {!params.pathname.includes("/admin") &&
-                <Box sx={{ width: "100vw", height: "70vh" }}>
-                    <img src={Banner} width="100%" height="100%" alt='banner' />
-                </Box>
+                <>
+                    <Box id="homeAppbar" sx={{ width: "100vw", height: "70vh" }}>
+                        <img src={Banner} width="100%" height="100%" alt='banner' />
+                        <Box id="aboutus"></Box>
+                    </Box>
+                </>
             }
         </>
     )

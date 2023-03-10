@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutUs = () => {
   return (
-    <Box id="aboutus" sx={{ width: "90%", height: "auto", margin: "4rem auto", display: "flex", alignItems: "flex-start", justifyContent: "center", rowGap: "35px", columnGap: "30px", flexWrap: "wrap", flexDirection: "column" }}>
+    <Box sx={{ width: "90%", height: "auto", margin: "4rem auto", display: "flex", alignItems: "flex-start", justifyContent: "center", rowGap: "35px", columnGap: "30px", flexWrap: "wrap", flexDirection: "column" }}>
       <Typography sx={{ fontSize: "28px", fontWeight: "600", }}>About Us
         <Box sx={{ height: "3px", width: "100px", background: "#1976d2", borderRadius: "6px" }}></Box></Typography>
 
