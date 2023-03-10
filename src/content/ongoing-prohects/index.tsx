@@ -15,6 +15,7 @@ const Head = () => {
 
     const [isViewerOpen, setIsViewerOpen] = React.useState(false);
     const { modalImagesList } = useSelector((state: RootState) => state.artGallery)
+    const [convertedImg, setConvertedImg] = React.useState<string[]>([]);
 
 
     const openModalHandler = (row: any) => {
@@ -22,6 +23,16 @@ const Head = () => {
         dispatch(ArtGalleryActions.openGalleryModal(true))
         setIsViewerOpen(true);
     }
+
+    React.useEffect(() => {
+        if (modalImagesList?.media?.length) {
+            modalImagesList?.media.forEach((data: any) => {
+                setConvertedImg((prev) => [...prev, process.env.PUBLIC_URL + data]);
+            })
+        } else {
+            return;
+        }
+    }, [modalImagesList?.media]);
 
     const closeImageViewer = () => {
         setIsViewerOpen(false);
@@ -46,7 +57,7 @@ const Head = () => {
 
                         <Box key={row.id} sx={{
                             width: "98%", height: "98%",
-                            background: `url(${row?.media[0]}) no-repeat center center/cover`,
+                            background: `url(${process.env.PUBLIC_URL + row?.media[0]}) no-repeat center center/cover`,
                             margin: "auto", borderRadius: "6px", cursor: "pointer"
                         }}>
                             <Typography onClick={() => openModalHandler(row)} align='center' variant='h5' className={Classes.cardname}>Mangalore</Typography>
@@ -57,7 +68,7 @@ const Head = () => {
                                 {/* <img className={Classes.insidecard} src={row?.url} height="100%" width="100%" alt={row?.name} /> */}
                                 <Box className={Classes.insidecard} sx={{
                                     width: "98%", height: "98%",
-                                    background: `url(${row?.media[0]}) no-repeat center center/cover`,
+                                    background: `url(${process.env.PUBLIC_URL + row?.media[0]}) no-repeat center center/cover`,
                                     margin: "auto", borderRadius: "6px", cursor: "pointer"
                                 }} ></Box>
                             </Box>
@@ -67,7 +78,7 @@ const Head = () => {
                 {/* <ImageListDialog /> */}
                 {isViewerOpen && (
                     <ImageViewer
-                        src={modalImagesList?.media || []}
+                        src={convertedImg}
                         // currentIndex={currentImage}
                         onClose={closeImageViewer}
                         disableScroll={false}
