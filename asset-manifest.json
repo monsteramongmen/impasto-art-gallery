@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/impasto-art-gallery/static/css/main.63a64782.css",
+    "main.js": "/impasto-art-gallery/static/js/main.7ee19eaf.js",
+    "static/css/930.8316d9de.chunk.css": "/impasto-art-gallery/static/css/930.8316d9de.chunk.css",
+    "static/js/930.49549a40.chunk.js": "/impasto-art-gallery/static/js/930.49549a40.chunk.js",
+    "static/js/246.61be7862.chunk.js": "/impasto-art-gallery/static/js/246.61be7862.chunk.js",
+    "static/js/462.891e4604.chunk.js": "/impasto-art-gallery/static/js/462.891e4604.chunk.js",
+    "static/css/374.c4b68a07.chunk.css": "/impasto-art-gallery/static/css/374.c4b68a07.chunk.css",
+    "static/js/374.49fd4586.chunk.js": "/impasto-art-gallery/static/js/374.49fd4586.chunk.js",
+    "static/css/785.ae40dd42.chunk.css": "/impasto-art-gallery/static/css/785.ae40dd42.chunk.css",
+    "static/js/785.57778b16.chunk.js": "/impasto-art-gallery/static/js/785.57778b16.chunk.js",
+    "static/js/787.84beeeeb.chunk.js": "/impasto-art-gallery/static/js/787.84beeeeb.chunk.js",
+    "static/media/banner4.jpg": "/impasto-art-gallery/static/media/banner4.b8a95512bd267d395ddd.jpg",
+    "index.html": "/impasto-art-gallery/index.html",
+    "main.63a64782.css.map": "/impasto-art-gallery/static/css/main.63a64782.css.map",
+    "main.7ee19eaf.js.map": "/impasto-art-gallery/static/js/main.7ee19eaf.js.map",
+    "930.8316d9de.chunk.css.map": "/impasto-art-gallery/static/css/930.8316d9de.chunk.css.map",
+    "930.49549a40.chunk.js.map": "/impasto-art-gallery/static/js/930.49549a40.chunk.js.map",
+    "246.61be7862.chunk.js.map": "/impasto-art-gallery/static/js/246.61be7862.chunk.js.map",
+    "462.891e4604.chunk.js.map": "/impasto-art-gallery/static/js/462.891e4604.chunk.js.map",
+    "374.c4b68a07.chunk.css.map": "/impasto-art-gallery/static/css/374.c4b68a07.chunk.css.map",
+    "374.49fd4586.chunk.js.map": "/impasto-art-gallery/static/js/374.49fd4586.chunk.js.map",
+    "785.ae40dd42.chunk.css.map": "/impasto-art-gallery/static/css/785.ae40dd42.chunk.css.map",
+    "785.57778b16.chunk.js.map": "/impasto-art-gallery/static/js/785.57778b16.chunk.js.map",
+    "787.84beeeeb.chunk.js.map": "/impasto-art-gallery/static/js/787.84beeeeb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63a64782.css",
+    "static/js/main.7ee19eaf.js"
+  ]
+}
