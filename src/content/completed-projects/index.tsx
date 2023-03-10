@@ -6,19 +6,22 @@ import { Typography } from '@mui/material'
 // import ImageListDialog from './ImageDialog'
 import ImageViewer from "react-simple-image-viewer"
 
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, } from 'react-redux'
 import { ArtGalleryActions } from '../../slice/artgallery'
-import { RootState } from '../../store'
+// import { RootState } from '../../store'
 
 const Head = () => {
     const dispatch = useDispatch();
 
     const [isViewerOpen, setIsViewerOpen] = React.useState(false);
-    const { modalImagesList } = useSelector((state: RootState) => state.artGallery)
+    // const { modalImagesList } = useSelector((state: RootState) => state.artGallery)
     const [convertedImg, setConvertedImg] = React.useState<string[]>([]);
 
 
     const openModalHandler = (row: any) => {
+        row?.media.forEach((data: any) => {
+            setConvertedImg((prev) => [...prev, process.env.PUBLIC_URL + data]);
+        })
         dispatch(ArtGalleryActions.modalImagesList(row))
         dispatch(ArtGalleryActions.openGalleryModal(true))
         setTimeout(() => {
@@ -26,18 +29,20 @@ const Head = () => {
         }, 100);
     }
 
-    React.useEffect(() => {
-        if (modalImagesList?.media?.length) {
-            modalImagesList?.media.forEach((data: any) => {
-                setConvertedImg((prev) => [...prev, process.env.PUBLIC_URL + data]);
-            })
-        } else {
-            return;
-        }
-    }, [modalImagesList?.media]);
+    // React.useEffect(() => {
+    //     if (modalImagesList?.media?.length) {
+    //         modalImagesList?.media.forEach((data: any) => {
+    //             setConvertedImg((prev) => [...prev, process.env.PUBLIC_URL + data]);
+    //         })
+    //     } else {
+    //         return;
+    //     }
+    // }, [modalImagesList?.media]);
 
     const closeImageViewer = () => {
         setIsViewerOpen(false);
+        dispatch(ArtGalleryActions.modalImagesList({}))
+        setConvertedImg([]);
     };
 
     return (
