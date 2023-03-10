@@ -52,7 +52,7 @@ const Head = () => {
             </Box>
             <Box sx={{ width: "90%", height: "auto", margin: "4rem auto", display: "flex", alignItems: "center", justifyContent: "center", rowGap: "35px", columnGap: "30px", flexWrap: "wrap" }}>
 
-                {ImageList.filter((data) => data?.type === "completed").map((row) => {
+                {ImageList.filter((data) => data?.type === "completed").reverse().map((row) => {
                     return <Box
                         className={Classes.card}
                         key={row.id} sx={{

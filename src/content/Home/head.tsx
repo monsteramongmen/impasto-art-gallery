@@ -56,7 +56,7 @@ const Head = () => {
             </Box>
 
             <Box sx={{ width: "90%", height: "auto", margin: "0rem auto 5rem auto", display: "flex", alignItems: "center", justifyContent: "center", rowGap: "35px", columnGap: "30px", flexWrap: "wrap" }}>
-                {ImageList.map((row) => {
+                {ImageList.slice(-10).map((row) => {
                     return <Box
                         //  data-aos="fade-up"
                         //     data-aos-duration="800"
