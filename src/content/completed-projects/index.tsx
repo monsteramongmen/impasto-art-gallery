@@ -21,7 +21,9 @@ const Head = () => {
     const openModalHandler = (row: any) => {
         dispatch(ArtGalleryActions.modalImagesList(row))
         dispatch(ArtGalleryActions.openGalleryModal(true))
-        setIsViewerOpen(true);
+        setTimeout(() => {
+            setIsViewerOpen(true);
+        }, 100);
     }
 
     React.useEffect(() => {
