@@ -19,6 +19,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
+import logo from '../../assets/images/ImpastoLogo.svg';
 
 const TopBar = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -47,7 +48,7 @@ const TopBar = () => {
         >
           <Hidden only={["xs", "sm"]}>
             <Box sx={{ width: "10%", height: "10%" }} onClick={() => { navigate("/"); }}>
-              <img src="/images/ImpastoLogo.svg" alt="impasto-logo" width="100%" height="100%" />
+              <img src={logo} alt="impasto-logo" width="100%" height="100%" />
             </Box>
             <Stack direction="row" spacing={2}>
               <IconButton
@@ -154,7 +155,7 @@ const TopBar = () => {
                 alignItems: "center",
               }}
             ><Box sx={{ width: "30%", height: "30%" }} onClick={() => { navigate("/"); }}>
-                <img src="/images/ImpastoLogo.svg" alt="impasto-logo" width="100%" height="100%" />
+                <img src={logo} alt="impasto-logo" width="100%" height="100%" />
               </Box>
               {!mobileMenu ? (
                 <IconButton
